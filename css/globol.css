@@ -1,0 +1,38 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: "inter", arial, sans-serif;
+}
+p,
+h1,
+h2,
+h3,
+span,
+a,
+strong {
+  padding: 0px;
+  margin: 0px;
+  color: var(--cor-principal);
+}
+li {
+  list-style: none;
+}
+:root {
+  --cor-principal: #141414;
+  --cor-cinza: #333333;
+  -cor-cinza-dark:#4D4D4D;
+  --cor-palavra-cinza:#CCCCCC;
+  --cor-texto:#4D4D4D;
+  --cor-cinza-fundo:#E6E6E6;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+.subtitulo {
+  font-size: 9rem;
+  text-transform: uppercase;
+  max-width: 4ch;
+  word-break: break-all;
+}

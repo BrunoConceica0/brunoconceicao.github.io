@@ -1,0 +1,76 @@
+.rodape {
+  padding: 150px 60px 50px 60px;
+  box-sizing: border-box;
+  background: #000;
+  position: relative;
+}
+.rodape-contato {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 0 auto;
+  place-items: center;
+}
+.rodape-texto {
+  font-size: 1.625rem;
+  font-weight: normal;
+  color: var(--cor-palavra-cinza);
+}
+.contatos {
+  color: var(--cor-palavra-cinza);
+  font-size: 3rem;
+  font-weight: bolder;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.contatos a {
+  color: var(--cor-palavra-cinza);
+}
+.rodape-direitos {
+  color: var(--cor-palavra-cinza);
+  font-size: 1.252rem;
+  padding-top: 60px;
+}
+.rodape::before {
+  content: "";
+  width: 130px;
+  height: 130px;
+  background: url("/img/detalhe.svg") no-repeat;
+  position: absolute;
+  top: -60px;
+}
+@media (max-width: 1000px) {
+  .rodape-texto {
+    font-size: 1.425rem;
+  }
+  .contatos li {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 600px) {
+  .rodape-contato {
+    grid-template-columns: 1fr;
+    place-items: initial;
+  }
+  .rodape-texto {
+    font-size: 0.825rem;
+    line-height: 1.3;
+  }
+  .contatos li{
+    font-size: 1.125rem;
+    line-height: 1.3;
+  }
+  .rodape-direitos{
+    font-size: 0.825rem;
+  } 
+.rodape::before{
+  height: 60px;
+  width: 160px;
+  top: -40px;
+  left: -20px;
+  position: absolute;
+} 
+.rodape{
+  padding: 60px;
+}
+}
